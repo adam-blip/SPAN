@@ -40,14 +40,16 @@ You can obtain all the checkpoints and results from [[Google Drive](https://driv
 ```python
 python 3.9.5
 pytorch 1.11.0
-cuda 11.3
 ```
 
+on windows with miniconda installed and using a python environment:
 ```
 git clone this repo
 cd SPAN
 pip install -r requirements.txt
-python setup.py develop --no_cuda_ext
+python setup.py develop
+pip install torch==1.13.1+cpu torchvision==0.14.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+pip install torch-directmltorch-directml==0.1.13.1.dev230413
 ```
 
 
